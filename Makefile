@@ -88,20 +88,25 @@ prod-build: export TARGET_OS ?= all
 prod-build:
 	scripts/prepare-for-platform.sh android && \
 	scripts/prepare-for-platform.sh ios && \
-	lein prod-build
+	lein prod-build && \
+	sed -i "s|$(PWD)|.|g" ./index.android.js && \
+	sed -i "s|$(PWD)|.|g" ./index.ios.js
 
 prod-build-android: export TARGET_OS ?= android
 prod-build-android:
-	lein prod-build-android
+	lein prod-build-android && \
+	sed -i "s|$(PWD)|.|g" ./index.android.js
 
 prod-build-ios: export TARGET_OS ?= ios
 prod-build-ios:
-	lein prod-build-ios
+	lein prod-build-ios && \
+	sed -i "s|$(PWD)|.|g" ./index.ios.js
 
 prod-build-desktop: export TARGET_OS ?= $(HOST_OS)
 prod-build-desktop:
 	git clean -qdxf -f ./index.desktop.js desktop/ && \
-	lein prod-build-desktop
+	lein prod-build-desktop && \
+	sed -i "s|$(PWD)|.|g" ./index.desktop.js
 
 #--------------
 # REPL
