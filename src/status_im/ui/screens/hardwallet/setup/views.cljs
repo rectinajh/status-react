@@ -223,9 +223,11 @@
       (enter-recovery-phrase))))
 
 (defview enter-pair-code []
+  {:component-will-update #(.clear @ref)}
   (letsubs [pair-code [:hardwallet-pair-code]
             error [:hardwallet-setup-error]
-            width [:dimensions/window-width]]
+            width [:dimensions/window-width]
+            ref (atom nil)]
     [react/scroll-view
      [react/view styles/enter-pair-code-container
       [react/view styles/enter-pair-code-title-container
@@ -243,6 +245,8 @@
        [react/view (styles/enter-pair-code-input-container width)
         [text-input/text-input-with-label
          {:on-change-text #(re-frame/dispatch [:hardwallet.ui/pair-code-input-changed %])
+          :auto-focus     true
+          :ref            (partial reset! ref)
           :placeholder    ""}]]]
       [react/view styles/next-button-container
        [react/view components.styles/flex]
