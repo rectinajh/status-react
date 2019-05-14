@@ -1,5 +1,5 @@
 
-{ buildGoPackage, go, xcodeWrapper, pkgs, stdenv, utils }:
+{ buildGoPackage, go, xcodeWrapper, callPackage, stdenv, utils }:
 
 { owner, repo, rev, version, goPackagePath, src, host,
 
@@ -11,7 +11,7 @@
 with stdenv;
 
 let
-  buildStatusGo = pkgs.callPackage ./build-status-go.nix { inherit buildGoPackage go xcodeWrapper utils; };
+  buildStatusGo = callPackage ./build-status-go.nix { inherit buildGoPackage go xcodeWrapper utils; };
 
   args = removeAttrs args' [ "goBuildFlags" "goBuildLdFlags" "outputFileName" "hostSystem" ]; # Remove desktop-only arguments from args
   buildStatusGoDesktopLib = buildStatusGo (args // {
