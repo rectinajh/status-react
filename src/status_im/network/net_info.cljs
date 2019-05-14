@@ -1,5 +1,5 @@
 (ns status-im.network.net-info
-  (:require [taoensso.timbre :as log]
+  (:require [status-im.utils.log :as log]
             [status-im.ui.components.react :as react-components]
             [status-im.utils.platform :as platform]))
 

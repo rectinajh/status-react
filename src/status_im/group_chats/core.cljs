@@ -18,7 +18,7 @@
             [status-im.utils.clocks :as utils.clocks]
             [status-im.utils.fx :as fx]
             [status-im.mailserver.core :as mailserver]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 ;; Description of the flow:
 ;; the flow is complicated a bit by 2 asynchronous call to status-go, which might make the logic a bit more opaque.

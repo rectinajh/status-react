@@ -5,7 +5,7 @@
             [status-im.utils.ethereum.core :as ethereum]
             [status-im.node.core :as node]
             [status-im.protocol.core :as protocol]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.native-module.core :as status]))
 
 (defn make-internal-web3

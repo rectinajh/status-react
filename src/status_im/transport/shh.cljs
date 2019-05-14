@@ -4,7 +4,7 @@
             [status-im.constants :as constants]
             [status-im.transport.message.transit :as transit]
             [status-im.transport.utils :as transport.utils]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.transport.partitioned-topic :as transport.topic]
             [status-im.utils.config :as config]))
 

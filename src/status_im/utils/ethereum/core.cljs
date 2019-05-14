@@ -6,7 +6,7 @@
             [status-im.utils.ethereum.tokens :as tokens]
             [status-im.utils.ethereum.abi-spec :as abi-spec]
             [status-im.utils.money :as money]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 ;; IDs standardized in https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md#list-of-chain-ids
 

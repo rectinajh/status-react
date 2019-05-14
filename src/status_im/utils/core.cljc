@@ -1,8 +1,7 @@
 (ns status-im.utils.core
   (:require [clojure.string :as str]
             #?(:cljs [cljs.tools.reader.edn :as edn]
-               :clj [clojure.tools.reader.edn :as edn])
-            [taoensso.timbre :as log]))
+               :clj [clojure.tools.reader.edn :as edn])))
 
 (defn truncate-str
   "Given string and max threshold, trims the string to threshold length with `...`
@@ -72,4 +71,4 @@
      (try
        (edn/read-string content)
        (catch :default e
-         (log/warn "failed to transform message with " e)))))
+         ()))))

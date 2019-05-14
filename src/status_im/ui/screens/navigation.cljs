@@ -2,7 +2,7 @@
   (:require [re-frame.core :as re-frame]
             [status-im.utils.handlers :as handlers]
             [status-im.utils.navigation :as navigation]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.fx :as fx]))
 
 ;; private helper fns

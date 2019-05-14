@@ -1,7 +1,7 @@
 (ns status-im.transport.message.pairing
   (:require [cljs.spec.alpha :as spec]
             [status-im.transport.message.protocol :as protocol]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (defrecord PairInstallation
            [installation-id device-type name fcm-token]

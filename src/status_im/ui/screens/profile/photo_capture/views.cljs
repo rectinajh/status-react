@@ -8,7 +8,7 @@
             [status-im.i18n :as i18n]
             [status-im.ui.screens.profile.photo-capture.styles :as styles]
             [status-im.utils.image-processing :as image-processing]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.ui.components.icons.vector-icons :as icons]))
 
 (defn image-captured [data]

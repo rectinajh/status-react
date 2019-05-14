@@ -4,7 +4,7 @@
             [status-im.utils.platform :as platform]
             [status-im.i18n :as i18n]
             [re-frame.core :as re-frame]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.config :as config]))
 
 (defn show-desktop-menu [items]

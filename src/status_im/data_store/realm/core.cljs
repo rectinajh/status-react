@@ -5,7 +5,7 @@
             [re-frame.core :as re-frame]
             [status-im.data-store.realm.schemas.account.core :as account]
             [status-im.data-store.realm.schemas.base.core :as base]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.fs :as fs]
             [status-im.utils.async :as utils.async]
             [status-im.utils.platform :as utils.platform]

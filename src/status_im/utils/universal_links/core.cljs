@@ -15,7 +15,7 @@
             [status-im.utils.config :as config]
             [status-im.utils.fx :as fx]
             [status-im.utils.ethereum.eip681 :as eip681]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.platform :as platform]
             [status-im.constants :as constants]))
 

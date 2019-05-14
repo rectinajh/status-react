@@ -1,7 +1,7 @@
 (ns status-im.ui.screens.add-new.events
   (:require [status-im.ui.screens.add-new.models :as models]
             [status-im.utils.handlers :as handlers]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (handlers/register-handler-fx
  :handle-qr-code

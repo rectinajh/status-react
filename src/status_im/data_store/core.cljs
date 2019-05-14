@@ -1,7 +1,7 @@
 (ns status-im.data-store.core
   (:require [cljs.core.async :as async]
             [re-frame.core :as re-frame]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.data-store.realm.core :as data-source]
             status-im.data-store.chats
             status-im.data-store.messages

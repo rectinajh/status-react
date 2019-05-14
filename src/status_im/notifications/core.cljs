@@ -3,7 +3,7 @@
             [re-frame.core :as re-frame]
             [status-im.react-native.js-dependencies :as rn]
             [status-im.js-dependencies :as dependencies]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.i18n :as i18n]
             [status-im.accounts.db :as accounts.db]
             [status-im.contact.db :as contact.db]

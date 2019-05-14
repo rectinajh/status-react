@@ -9,7 +9,7 @@
             [status-im.utils.ethereum.tokens :as tokens]
             [status-im.utils.http :as http]
             [status-im.utils.types :as types]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.fx :as fx]
             [re-frame.core :as re-frame]
             [re-frame.db]

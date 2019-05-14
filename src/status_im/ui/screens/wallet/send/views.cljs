@@ -26,7 +26,7 @@
             [status-im.utils.ethereum.tokens :as tokens]
             [status-im.utils.ethereum.core :as ethereum]
             [status-im.transport.utils :as transport.utils]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [reagent.core :as reagent]
             [status-im.ui.components.colors :as colors]
             [status-im.ui.screens.wallet.utils :as wallet.utils]))

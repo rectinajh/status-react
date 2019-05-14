@@ -52,16 +52,6 @@ pipeline {
         }
       }
     }
-    stage('Lint') {
-      steps {
-        script { cmn.nix.shell('lein cljfmt check') }
-      }
-    }
-    stage('Tests') {
-      steps {
-        script { cmn.nix.shell('lein test-cljs') }
-      }
-    }
     stage('Build') {
       steps {
         script { cmn.nix.shell('lein prod-build-android') }

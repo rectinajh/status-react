@@ -11,7 +11,7 @@
             [status-im.transport.utils :as transport.utils]
             [status-im.contact.device-info :as device-info]
             [status-im.utils.fx :as fx]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (defn unwrap-message
   "Extract message from new payload {:id some-id :message some-message}

@@ -2,7 +2,7 @@
   (:require [status-im.react-native.js-dependencies :refer [desktop-shortcuts]]
             [status-im.ui.screens.desktop.main.tabs.home.views :as chat-list]
             [re-frame.core :as re-frame]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.utils :as utils]))
 
 (defn register-shortcut [shortcut on-press]

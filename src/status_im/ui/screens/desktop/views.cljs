@@ -14,7 +14,7 @@
             [status-im.utils.platform :as platform]
             [status-im.i18n :as i18n]
             [status-im.react-native.js-dependencies :as rn-dependencies]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.utils :as utils]))
 
 (enable-console-print!)

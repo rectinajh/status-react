@@ -10,7 +10,7 @@
             [status-im.ui.screens.desktop.main.add-new.styles :as styles]
             [status-im.ui.screens.add-new.new-public-chat.view :refer [default-public-chats]]
             [status-im.ui.screens.add-new.new-public-chat.db :as public-chat.db]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.ui.components.react :as react]
             [status-im.ui.components.colors :as colors]))
 

@@ -1,6 +1,6 @@
 (ns status-im.utils.keychain.core
   (:require [re-frame.core :as re-frame]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.react-native.js-dependencies :as rn]
             [status-im.utils.platform :as platform]
             [status-im.utils.security :as security]

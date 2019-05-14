@@ -5,7 +5,7 @@
    [status-im.utils.navigation :as navigation]
    [cljs-react-navigation.reagent :as nav-reagent]
    [re-frame.core :as re-frame]
-   [taoensso.timbre :as log]
+   [status-im.utils.log :as log]
    [status-im.utils.platform :as platform]
    [status-im.utils.core :as utils]
    [status-im.ui.screens.routing.screens :as screens]

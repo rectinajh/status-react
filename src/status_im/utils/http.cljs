@@ -1,7 +1,7 @@
 (ns status-im.utils.http
   (:require [status-im.utils.utils :as utils]
             [status-im.react-native.js-dependencies :as rn-dependencies]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [clojure.string :as string])
   (:refer-clojure :exclude [get]))
 

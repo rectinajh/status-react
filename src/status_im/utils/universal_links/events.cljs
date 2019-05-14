@@ -1,7 +1,7 @@
 (ns status-im.utils.universal-links.events
   (:require [status-im.utils.handlers :as handlers]
             [status-im.utils.universal-links.core :as universal-links]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (handlers/register-handler-fx
  :handle-universal-link

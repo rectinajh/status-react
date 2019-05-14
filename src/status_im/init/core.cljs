@@ -27,7 +27,7 @@
             [status-im.utils.keychain.core :as keychain]
             [status-im.utils.platform :as platform]
             [status-im.utils.utils :as utils]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.fx :as fx]
             [status-im.chat.models :as chat-model]
             [status-im.accounts.db :as accounts.db]

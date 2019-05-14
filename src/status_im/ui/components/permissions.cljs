@@ -1,6 +1,6 @@
 (ns status-im.ui.components.permissions
   (:require [status-im.utils.platform :as platform]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.ui.components.camera :as camera]
             [status-im.react-native.js-dependencies :as js-dependencies]))
 

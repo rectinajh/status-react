@@ -17,7 +17,7 @@
             [status-im.utils.identicon :as identicon]
             [status-im.utils.signing-phrase.core :as signing-phrase]
             [status-im.utils.types :as types]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.fx :as fx]
             [status-im.node.core :as node]
             [status-im.ui.screens.mobile-network-settings.events :as mobile-network]

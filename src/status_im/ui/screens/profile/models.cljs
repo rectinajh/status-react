@@ -7,7 +7,7 @@
             [status-im.chat.models :as chat-models]
             [status-im.chat.commands.input :as commands-input]
             [status-im.utils.image-processing :as image-processing]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.fx :as fx]))
 
 (defn open-image-picker! [callback-event]

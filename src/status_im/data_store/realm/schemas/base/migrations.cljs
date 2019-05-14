@@ -1,5 +1,5 @@
 (ns status-im.data-store.realm.schemas.base.migrations
-  (:require [taoensso.timbre :as log]
+  (:require [status-im.utils.log :as log]
             [cognitect.transit :as transit]
             [clojure.set :as set]
             [clojure.string :as string]

@@ -6,7 +6,7 @@
             [status-im.utils.fx :as fx]
             [status-im.utils.handlers :as handlers]
             [status-im.transport.partitioned-topic :as transport.topic]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.contact.core :as contact]))
 
 (defn- receive-message [chat-id js-error js-message]

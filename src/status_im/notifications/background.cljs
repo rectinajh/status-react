@@ -5,7 +5,7 @@
             [status-im.notifications.core :as notifications]
             [status-im.i18n :as i18n]
             [cljs.core.async :as async]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.platform :as platform]))
 
 (when-not platform/desktop?

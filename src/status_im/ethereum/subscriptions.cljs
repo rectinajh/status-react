@@ -4,7 +4,7 @@
             [status-im.ethereum.decode :as decode]
             [status-im.native-module.core :as status]
             [status-im.utils.fx :as fx]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (defn get-block-by-hash [block-hash callback]
   (status/call-private-rpc

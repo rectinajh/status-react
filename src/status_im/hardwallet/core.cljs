@@ -5,7 +5,7 @@
             [status-im.utils.config :as config]
             [status-im.utils.fx :as fx]
             [status-im.utils.platform :as platform]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.i18n :as i18n]
             [status-im.utils.types :as types]
             [status-im.accounts.create.core :as accounts.create]

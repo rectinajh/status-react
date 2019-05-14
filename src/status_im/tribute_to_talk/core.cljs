@@ -11,7 +11,7 @@
             [status-im.utils.ethereum.contracts :as contracts]
             [status-im.utils.ethereum.core :as ethereum]
             [status-im.utils.fx :as fx]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (fx/defn update-settings
   [{:keys [db] :as cofx} {:keys [snt-amount message update] :as new-settings}]

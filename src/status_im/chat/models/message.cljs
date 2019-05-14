@@ -28,7 +28,7 @@
             [status-im.utils.platform :as platform]
             [status-im.ui.components.react :as react]
             [status-im.utils.fx :as fx]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.data-store.messages :as messages-store]
             [status-im.transport.message.transit :as transit]))
 

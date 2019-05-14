@@ -9,7 +9,7 @@
             [reagent.core :as reagent]
             [status-im.utils.random :as rand]
             [re-frame.core :as re-frame]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.platform :as platform]
             [status-im.ui.screens.mobile-network-settings.view :as mobile-network-settings]
             [status-im.ui.screens.home.sheet.views :as home.sheet]

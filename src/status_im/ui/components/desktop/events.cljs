@@ -5,7 +5,7 @@
             [status-im.constants :as constants]
             [re-frame.core :as re-frame]
             [status-im.native-module.core :as status]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.handlers :as handlers]
             [status-im.utils.platform :as platform]))
 

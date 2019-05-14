@@ -1,7 +1,7 @@
 (ns status-im.desktop.deep-links
   (:require [re-frame.core :as re-frame]
             [status-im.react-native.js-dependencies :as js-dependencies]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (defn add-event-listener []
   (let [event-emitter (new (.-NativeEventEmitter js-dependencies/react-native)

@@ -10,7 +10,7 @@
             [status-im.utils.publisher :as publisher]
             [status-im.utils.fx :as fx]
             [status-im.utils.handlers :as handlers]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             status-im.transport.shh
             [status-im.utils.config :as config]))
 

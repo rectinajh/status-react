@@ -8,7 +8,7 @@
             [status-im.transport.utils :as transport.utils]
             [status-im.utils.fx :as fx]
             [status-im.utils.utils :as utils]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.transport.db :as transport.db]
             [status-im.transport.message.protocol :as protocol]
             [clojure.string :as string]

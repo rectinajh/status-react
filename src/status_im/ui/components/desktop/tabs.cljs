@@ -2,7 +2,7 @@
   (:require [re-frame.core :as re-frame]
             status-im.ui.components.desktop.events
             [status-im.ui.components.icons.vector-icons :as icons]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.ui.components.colors :as colors]
             [status-im.ui.components.react :as react]
             [status-im.ui.components.bottom-bar.styles :as tabs.styles])

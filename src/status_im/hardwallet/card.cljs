@@ -3,7 +3,7 @@
             [status-im.react-native.js-dependencies :as js-dependencies]
             [status-im.utils.config :as config]
             [status-im.utils.platform :as platform]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (defonce keycard (.-default js-dependencies/status-keycard))
 (defonce event-emitter (.-DeviceEventEmitter js-dependencies/react-native))

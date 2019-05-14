@@ -12,7 +12,7 @@
             [status-im.js-dependencies :as dependencies]
             [status-im.utils.datetime :as datetime]
             [status-im.utils.fx :as fx]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (defn text->emoji
   "Replaces emojis in a specified `text`"

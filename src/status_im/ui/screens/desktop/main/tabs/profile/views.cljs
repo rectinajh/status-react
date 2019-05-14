@@ -10,7 +10,7 @@
             [status-im.utils.logging.core :as logging]
             [status-im.utils.platform :as platform]
             [status-im.ui.components.icons.vector-icons :as vector-icons]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.gfycat.core :as gfy]
             [clojure.string :as string]
             [status-im.ui.screens.offline-messaging-settings.views :as offline-messaging.views]

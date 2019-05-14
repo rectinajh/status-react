@@ -7,7 +7,7 @@
             [status-im.utils.types :as types]
             [status-im.utils.platform :as utils.platform]
             [status-im.utils.utils :as utils]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.fx :as fx]))
 
 (defn- add-custom-bootnodes [config network all-bootnodes]

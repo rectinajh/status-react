@@ -10,7 +10,7 @@
             [status-im.utils.handlers :as handlers]
             [status-im.utils.money :as money]
             [status-im.utils.prices :as prices]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.fx :as fx]
             [status-im.i18n :as i18n]
             [status-im.utils.utils :as utils.utils]))

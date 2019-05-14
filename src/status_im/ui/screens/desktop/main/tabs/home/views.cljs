@@ -8,7 +8,7 @@
             [status-im.ui.components.popup-menu.views :as popup-menu]
             [clojure.string :as string]
             [status-im.ui.screens.home.views.inner-item :as chat-item]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.ui.components.icons.vector-icons :as icons]
             [status-im.ui.components.react :as react]
             [status-im.constants :as constants]

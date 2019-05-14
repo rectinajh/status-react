@@ -7,7 +7,7 @@
             [reagent.core :as reagent]
             status-im.transport.impl.receive
             status-im.transport.impl.send
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.utils.config :as config]
             [status-im.react-native.js-dependencies :as js-dependencies]
             [goog.object :as object]

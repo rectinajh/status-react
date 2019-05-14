@@ -57,7 +57,7 @@
             [status-im.utils.logging.core :as logging]
             [status-im.utils.utils :as utils]
             [status-im.web3.core :as web3]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 ;; init module
 

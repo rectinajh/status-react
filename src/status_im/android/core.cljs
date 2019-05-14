@@ -13,7 +13,7 @@
             [status-im.core :as core]
             [status-im.react-native.js-dependencies :as rn-dependencies]
             [status-im.utils.snoopy :as snoopy]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (defn app-state-change-handler [state]
   (dispatch [:app-state-change state]))

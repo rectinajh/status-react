@@ -20,7 +20,7 @@
             [status-im.utils.random :as random]
             [status-im.utils.types :as types]
             [status-im.utils.universal-links.core :as utils.universal-links]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.js-dependencies :as js-dependencies]
             [status-im.utils.universal-links.core :as universal-links]))
 

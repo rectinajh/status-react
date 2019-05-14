@@ -20,7 +20,7 @@
             [status-im.utils.gfycat.core :as gfycat]
             [status-im.utils.utils :as utils]
             [status-im.utils.config :as config]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [status-im.ui.screens.chat.stickers.views :as stickers]))
 
 (defview basic-text-input [{:keys [set-container-width-fn height single-line-input?]}]

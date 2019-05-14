@@ -1,5 +1,5 @@
 (ns status-im.data-store.realm.schemas.account.migrations
-  (:require [taoensso.timbre :as log]
+  (:require [status-im.utils.log :as log]
             [cljs.reader :as reader]
             [status-im.chat.models.message-content :as message-content]
             [status-im.transport.utils :as transport.utils]

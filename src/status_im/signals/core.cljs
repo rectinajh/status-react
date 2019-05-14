@@ -11,7 +11,7 @@
             [status-im.utils.fx :as fx]
             [status-im.utils.security :as security]
             [status-im.utils.types :as types]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (fx/defn status-node-started
   [{db :db :as cofx}]

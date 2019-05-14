@@ -8,7 +8,7 @@
             [status-im.transport.partitioned-topic :as transport.topic]
             [status-im.utils.config :as config]
             [status-im.utils.fx :as fx]
-            [taoensso.timbre :as log]))
+            [status-im.utils.log :as log]))
 
 (defprotocol StatusMessage
   "Protocol for the messages that are sent through the transport layer"

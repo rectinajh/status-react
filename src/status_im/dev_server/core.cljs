@@ -2,7 +2,7 @@
   (:require [status-im.ui.components.react :as react]
             [status-im.utils.platform :as platform]
             [status-im.utils.types :as types]
-            [taoensso.timbre :as log]
+            [status-im.utils.log :as log]
             [re-frame.core :as re-frame]))
 
 (defonce port 5561)

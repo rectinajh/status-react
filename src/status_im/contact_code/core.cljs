@@ -3,7 +3,7 @@
   to contact codes once we engage in the conversation with someone, or once someone is
   in our contacts."
   (:require
-   [taoensso.timbre :as log]
+   [status-im.utils.log :as log]
    [status-im.contact.db :as contact.db]
    [status-im.utils.fx :as fx]
    [status-im.transport.shh :as shh]
