@@ -222,8 +222,15 @@
       (display-recovery-phrase)
       (enter-recovery-phrase))))
 
-(defview enter-pair-code []
+(defview enter-pair-code-input [ref]
   {:component-will-update #(.clear @ref)}
+  [text-input/text-input-with-label
+   {:on-change-text #(re-frame/dispatch [:hardwallet.ui/pair-code-input-changed %])
+    :auto-focus     true
+    :ref            (partial reset! ref)
+    :placeholder    ""}])
+
+(defview enter-pair-code []
   (letsubs [pair-code [:hardwallet-pair-code]
             error [:hardwallet-setup-error]
             width [:dimensions/window-width]
@@ -243,11 +250,7 @@
                                :color       colors/red}}
            error]])
        [react/view (styles/enter-pair-code-input-container width)
-        [text-input/text-input-with-label
-         {:on-change-text #(re-frame/dispatch [:hardwallet.ui/pair-code-input-changed %])
-          :auto-focus     true
-          :ref            (partial reset! ref)
-          :placeholder    ""}]]]
+        [enter-pair-code-input ref]]]
       [react/view styles/next-button-container
        [react/view components.styles/flex]
        [react/view {:margin-right 20}
