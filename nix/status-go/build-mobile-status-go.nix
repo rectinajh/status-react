@@ -38,25 +38,29 @@ let
       mv ${targetConfig.outputFileName} $out/lib/
     '';
 
-    # replace $TMPDIR/gomobile-work-xxxxxxxxx paths, since they make the build non-reproducible
+    # replace $TMPDIR/gomobile-work-xxxxxxxxx paths and remove BuildIDs, since they make the build non-reproducible
     preFixup = lib.optionalString (targetConfig.name == "android") ''
       aar=$(ls $out/lib/*.aar)
       if [ -f "$aar" ]; then
         mkdir -p $out/lib/tmp
         unzip $aar -d $out/lib/tmp
-      fi
-      find $out -type f -exec ${remove-go-references-to}/bin/remove-go-references-to '{}' + || true
+
+        find $out -type f -exec ${remove-go-references-to}/bin/remove-go-references-to '{}' + || true
+
+        echo "Removing BuildID section from libraries for reproducible builds..." 
+        ${hostllvm}/x86_64-linux-android/bin/objcopy --remove-section .note.go.buildid --remove-section .gnu.version_d $out/lib/tmp/jni/x86_64/libgojni.so
+        ${hostllvm}/i686-linux-android/bin/objcopy --remove-section .note.go.buildid --remove-section .gnu.version_d $out/lib/tmp/jni/x86/libgojni.so
+        ${hostllvm}/arm-linux-androideabi/bin/objcopy --remove-section .note.go.buildid --remove-section .gnu.version_d $out/lib/tmp/jni/armeabi-v7a/libgojni.so
+        ${hostllvm}/aarch64-linux-android/bin/objcopy --remove-section .note.go.buildid $out/lib/tmp/jni/arm64-v8a/libgojni.so
+        find $out/lib/tmp -exec touch --reference=$out/lib/tmp/classes.jar -h '{}' +
       
-      ${hostllvm}/x86_64-linux-android/bin/objcopy --remove-section .note.go.buildid $out/lib/tmp/jni/x86_64/libgojni.so
-      ${hostllvm}/i686-linux-android/bin/objcopy --remove-section .note.go.buildid $out/lib/tmp/jni/x86/libgojni.so
-      ${hostllvm}/arm-linux-androideabi/bin/objcopy --remove-section .note.go.buildid $out/lib/tmp/jni/armeabi-v7a/libgojni.so
-      ${hostllvm}/aarch64-linux-android/bin/objcopy --remove-section .note.go.buildid $out/lib/tmp/jni/arm64-v8a/libgojni.so
-      
-      if [ -f "$aar" ]; then
         pushd $out/lib/tmp
         zip -fr $aar
         popd
         rm -rf $out/lib/tmp
+      else
+        echo ".aar file not found!"
+        exit 1
       fi
     '';
 
